@@ -1,1 +1,29 @@
-/*Legg inn koden her*/
+/* TASK 1C */
+#resultList {
+    list-style: none;
+    padding: 0;         /* removes indent*/
+}
+
+#resultList li {
+    margin-bottom: 10px;     /* space between elements */
+}
+
+/* TASK 2 */
+#todoList {
+    list-style: none;
+    padding: 0;
+}
+
+.completed{
+    text-decoration: line-through;
+    color: grey;
+}
+
+.removeButton{
+    margin-left: 15px;
+    margin-bottom: 15px;
+    border-radius: 15px;
+    border: 1px solid grey;
+    background-color: white;
+    padding: 5px;
+}/*Legg inn koden her*/
