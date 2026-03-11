@@ -2,7 +2,7 @@
     let score = 0;
 
     // 2. Grab references to all moles
-    const moles = document.getElementsByClassName("moles");
+    const moles = document.getElementsByClassName("mole"); //debugging: change "moles" to "mole"
 
     // 3. Function to show one random mole at a time
     function showRandomMole() {
@@ -12,7 +12,7 @@
       }
 
       // Show a random one
-      const randomIndex = Math.floor(Math.random() * moles.lenght); 
+      const randomIndex = Math.floor(Math.random() * moles.lenght)+1; //debugging: aadd +1
       moles[randomIndex].style.display = "block";
     }
 
