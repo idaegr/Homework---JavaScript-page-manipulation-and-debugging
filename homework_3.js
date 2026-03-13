@@ -61,7 +61,12 @@ function addTask() {
 
     let date_string = date_input.value;
     let date=document.createElement('date');
-    date.textContent='due: '+date_string;
+
+    // adding 'due: ' only if a date is chosen 
+    if (date_string !== '') {
+        date.textContent='due: '+ date_string;
+    }
+    
     date.classList.add('date')
 
     //create a new list item
