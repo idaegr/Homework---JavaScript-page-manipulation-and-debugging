@@ -56,13 +56,21 @@ function addTask() {
         return;
     }
 
+    //create a due date for the task
+    const date_input = document.getElementById('due_date');
+
+    let date_string = date_input.value;
+    let date=document.createElement('date');
+    date.textContent='due: '+date_string;
+    date.classList.add('date')
+
     //create a new list item
     let li = document.createElement('li');
 
     //checkbox
     let checkbox = document.createElement('input');
     checkbox.type = 'checkbox';
-    
+
     //create a span for the task text
     let span = document.createElement('span');
     span.textContent = taskText;
@@ -92,6 +100,7 @@ function addTask() {
     li.appendChild(checkbox);
     li.appendChild(span);
     li.appendChild(removeButton);
+    li.appendChild(date);
 
     //append the list item to the ul
     document.getElementById('todoList').appendChild(li);
