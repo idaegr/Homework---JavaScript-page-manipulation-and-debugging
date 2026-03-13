@@ -12,7 +12,7 @@
       }
 
       // Show a random one
-      const randomIndex = Math.floor(Math.random() * moles.length)+1; //debugging: add +1, spelling mistake in length
+      const randomIndex = Math.floor(Math.random() * moles.length); //debugging: spelling mistake in length
       moles[randomIndex].style.display = "block";
     }
 
