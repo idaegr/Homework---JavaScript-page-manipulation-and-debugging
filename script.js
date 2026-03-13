@@ -12,14 +12,14 @@
       }
 
       // Show a random one
-      const randomIndex = Math.floor(Math.random() * moles.lenght)+1; //debugging: aadd +1
+      const randomIndex = Math.floor(Math.random() * moles.length)+1; //debugging: add +1, spelling mistake in length
       moles[randomIndex].style.display = "block";
     }
 
     // 4. Function to "whack" a mole
     function whackMole() {
       // Increase the score
-      scor += 1; 
+      score += 1;     //fixed spelling mistake score
       document.getElementById("score").innerText = score;
       
       // Hide the mole you just hit
