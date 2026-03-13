@@ -37,6 +37,6 @@
     }
 
     // 6. Attach click event to each mole
-    for (let i = 0; i <= moles.length; i++) {
+    for (let i = 0; i < moles.length; i++) {    //debugging: removed = from <= to make the index [0, 1, 2] since we have 3 elements not 4
       moles[i].addEventListener("click", whackMole);
     }
